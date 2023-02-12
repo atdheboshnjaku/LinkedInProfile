@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         stringWithImage.append(completeImageString)
         locationAndConnectionsText.attributedText = stringWithImage
         
+        // Message ghost design
         messageButton.layer.cornerRadius = 5
         messageButton.layer.borderWidth = 2
         messageButton.layer.borderColor = UIColor(red: 13.0/255.0, green: 138.0/255.0, blue: 206.0/255.0, alpha: 1.0).cgColor
