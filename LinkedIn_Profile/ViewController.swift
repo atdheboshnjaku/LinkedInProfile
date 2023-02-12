@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         highlightsView.layer.shadowOpacity = 0.5
         highlightsView.layer.shadowRadius = 2
         
-        //
+        // Navigation container view border, shadow
         navigationView.layer.shadowColor = UIColor.lightGray.cgColor
         navigationView.layer.shadowOffset = CGSize(width: 0, height: 0)
         navigationView.layer.shadowOpacity = 0.5
@@ -65,6 +65,7 @@ class ViewController: UIViewController {
         stringWithImage.append(completeImageString)
         locationAndConnectionsText.attributedText = stringWithImage
         
+        // Message button design
         messageButton.layer.cornerRadius = 5
         messageButton.layer.borderWidth = 2
         messageButton.layer.borderColor = UIColor(red: 13.0/255.0, green: 138.0/255.0, blue: 206.0/255.0, alpha: 1.0).cgColor
