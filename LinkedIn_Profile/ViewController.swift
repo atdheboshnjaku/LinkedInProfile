@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var connectButton: UIButton!
     @IBOutlet weak var highlightsView: UIView!
+    @IBOutlet weak var highlightsProfileImage: UIView!
+    @IBOutlet weak var navigationView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,21 @@ class ViewController: UIViewController {
         connectButton.layer.cornerRadius = 5
         
         highlightsView.layer.cornerRadius = 5
+        
+        highlightsProfileImage.layer.cornerRadius = highlightsProfileImage.frame.height / 2
+        
+        // Highlights view border, shadow
+        highlightsView.layer.cornerRadius = 5
+        highlightsView.layer.shadowColor = UIColor.lightGray.cgColor
+        highlightsView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        highlightsView.layer.shadowOpacity = 0.5
+        highlightsView.layer.shadowRadius = 2
+        
+        //
+        navigationView.layer.shadowColor = UIColor.lightGray.cgColor
+        navigationView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        navigationView.layer.shadowOpacity = 0.5
+        navigationView.layer.shadowRadius = 2
         
         // Creating string with NSMutable in order to append an icon to it
         let stringWithImage = NSMutableAttributedString(string: "Syracuse University - New York Greater San Diego • 500+ ")
